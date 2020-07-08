@@ -1,6 +1,3 @@
-var x = 237;
-var y = 10;
-
 /*
 Write next functions
 
@@ -24,23 +21,20 @@ returns sum of 2 arguments
 */
 
 //1
-function multiplying() {
-  var result = x * y;
-  return result;
+function multiplying(a, b) {
+  return a * b;
 }
 
 //2
-function dividing() {
-  var result = x / y;
-  return result;
+function dividing(a, b) {
+  return a / b;
 }
 
 //3
-function sum() {
-  var result = x + y;
-  return result;
+function sum(a, b) {
+  return a + b;
 }
 
-console.log(multiplying());
-console.log(dividing());
-console.log(sum());
+console.log(multiplying(100, 37));
+console.log(dividing(20, 5));
+console.log(sum(1, 3));
