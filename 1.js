@@ -22,20 +22,17 @@ returns sum of 2 arguments
 
 //1
 function multiplying(a, b) {
-  var result = a * b;
-  return result;
+  return a * b;
 }
 
 //2
 function dividing(a, b) {
-  var result = a / b;
-  return result;
+  return a / b;
 }
 
 //3
 function sum(a, b) {
-  var result = a + b;
-  return result;
+  return a + b;
 }
 
 console.log(multiplying(100, 37));
