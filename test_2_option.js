@@ -1,3 +1,40 @@
+const expect = require("expect");
+
+function greaterNum(num1, num2) {
+  if (num1 > num2) {
+    console.log("Неверно");
+  } else if (num1 < num2) {
+    console.log("Наибольшее число между 5 и 10: 10");
+  }
+}
+
+function helloWorld(lang) {
+  switch (lang) {
+    case "en":
+      console.log("Hello");
+    case "es":
+      console.log("Hola");
+    default:
+      console.log("Привет");
+  }
+}
+helloWorld();
+
+// TASK 3
+function assignGrade(mark) {
+  if (mark >= 1 && mark <= 20) {
+    console.log("mark is 1");
+  } else if (mark >= 21 && mark <= 40) {
+    console.log("mark is 2");
+  } else if (mark >= 41 && mark <= 60) {
+    console.log("mark is 3");
+  } else if (mark >= 61 && mark <= 80) {
+    console.log("mark is 4");
+  } else if (mark >= 81 && mark <= 100) {
+    console.log("mark is 5");
+  }
+}
+
 describe("if/else/switch tasks", function () {
   describe("greaterNum", function () {
     describe("Возвращает результат", function () {
