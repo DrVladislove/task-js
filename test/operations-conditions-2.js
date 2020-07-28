@@ -13,7 +13,7 @@ function helloWorld(lang) {
       return "Привет";
   }
 }
-
+console.log(helloWorld());
 module.exports = {
   helloWorld,
 };
