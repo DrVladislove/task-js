@@ -10,13 +10,13 @@ function numberGenerator() {
   for (var i = 0; i < 5; i++) {
     var a = randomizer(1, 20);
     if (a % 2 == 0) {
-      return a, "Четное";
+      console.log(a + " четное");
     } else {
-      return a, "Нечетное";
+      console.log(a + " нечетное");
     }
   }
 }
-
+numberGenerator();
 module.exports = {
   numberGenerator,
 };
