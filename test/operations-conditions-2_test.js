@@ -5,12 +5,14 @@
 const assert = require("assert");
 const operations = require("./operations-conditions-2.js");
 
-it("Выдает правильный язык conditions-task-2", () => {
-  assert.equal(operations.helloWorld("en"), "Hello");
-});
-it("Выдает правильный язык conditions-task-2", () => {
-  assert.equal(operations.helloWorld("es"), "Hola");
-});
-it("Выдает правильный язык conditions-task-2", () => {
-  assert.equal(operations.helloWorld(), "Привет");
+describe("Переводчик", function () {
+  it("Правильно определяет язык 'en' —> Hello", () => {
+    assert.equal(operations.helloWorld("en"), "Hello");
+  });
+  it("Правильно определяет язык 'es' —> Hola", () => {
+    assert.equal(operations.helloWorld("es"), "Hola");
+  });
+  it("Правильно определяет язык 'default (ru)' —> Привет", () => {
+    assert.equal(operations.helloWorld(), "Привет");
+  });
 });
