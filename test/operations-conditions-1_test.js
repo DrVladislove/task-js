@@ -7,15 +7,17 @@ Bозвращает наибольшее число из полученных в
 const operations = require("./operations-conditions-1.js");
 const assert = require("assert");
 
-it("Правильно определяет большее число", () => {
-  assert.equal(operations.greaterNum(0, 1), 1);
-});
-it("Правильно определяет большее число>", () => {
-  assert.equal(operations.greaterNum(1, 1), 1);
-});
-it("Правильно определяет большее число", () => {
-  assert.equal(operations.greaterNum(-1, 0), 0);
-});
-it("Правильно определяет большее число", () => {
-  assert.equal(operations.greaterNum(-2, 2), 2);
+describe("Какое из чисел больше?", function () {
+  it("Правильно определяет большее число", () => {
+    assert.equal(operations.greaterNum(0, 1), 1);
+  });
+  it("Правильно определяет большее число>", () => {
+    assert.equal(operations.greaterNum(1, 1), 1);
+  });
+  it("Правильно определяет большее число", () => {
+    assert.equal(operations.greaterNum(-1, 0), 0);
+  });
+  it("Правильно определяет большее число", () => {
+    assert.equal(operations.greaterNum(-2, 2), 2);
+  });
 });
