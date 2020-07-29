@@ -16,7 +16,7 @@ function numberGenerator() {
     }
   }
 }
-numberGenerator();
+
 module.exports = {
   numberGenerator,
 };

@@ -8,7 +8,7 @@ const operations = require("./operations-loops-1.js");
 var sinon = require("sinon");
 var expect = require("chai").expect;
 
-describe("numberGenerator", function () {
+describe("Генератор Чётных/Нечетных", function () {
   var spy;
 
   beforeEach(function () {
