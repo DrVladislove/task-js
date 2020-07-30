@@ -1,7 +1,7 @@
 const operations = require("./operations-conditions-3.js");
 const assert = require("assert");
 
-describe("Постановщик оценок", function () {
+describe("assignGrade", function () {
   it("Правильно определяет оценку (4)", () => {
     assert.equal(operations.assignGrade(62), "mark is 4");
   });

@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --recursive ./**/*.js"
   },
   "dependencies": {
     "chai": "^4.2.0",

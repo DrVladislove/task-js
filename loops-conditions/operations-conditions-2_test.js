@@ -5,7 +5,7 @@
 const assert = require("assert");
 const operations = require("./operations-conditions-2.js");
 
-describe("Переводчик", function () {
+describe("helloWorld", function () {
   it("Правильно определяет язык 'en' —> Hello", () => {
     assert.equal(operations.helloWorld("en"), "Hello");
   });

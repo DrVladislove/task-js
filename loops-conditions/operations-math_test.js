@@ -1,7 +1,7 @@
 const operations = require("./operations-math.js");
 const assert = require("assert");
 
-describe("Математические операции", function () {
+describe("Math operations", function () {
   it("Правильно находит произведение 2 и 3", () => {
     assert.equal(operations.multiply(2, 3), 6);
   });

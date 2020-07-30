@@ -21,18 +21,18 @@ describe("multiplicationTable", function () {
     console.log.restore();
   });
 
-  it("Выводит таблицу", function () {
+  it("Prints table", function () {
     var resultString;
     for (var i = 1; i <= 10; i++) {
       for (var j = 1; j <= 10; j++) {
         resultString = i + " * " + j + " = " + i * j;
 
-        expect(spy.calledWithExactly(resultString)).to.be.false;
+        expect(spy.calledWithExactly(resultString)).to.be.true;
       }
     }
   });
 
-  it("Выводит результат 100 раз", function () {
-    expect(spy.callCount).to.be.eq(0, 100);
+  it("Prints 100 times", function () {
+    expect(spy.callCount).to.be.eq(100);
   });
 });
