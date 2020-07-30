@@ -50,7 +50,7 @@ describe("Number generator even/odd", function () {
     });
 
     it("Returns result — even", function () {
-      expect(spy.calledWith("12 is even")).to.be.true;
+      expect(spy.calledWith("12 even")).to.be.true;
     });
 
     it("Show result 5 times", function () {

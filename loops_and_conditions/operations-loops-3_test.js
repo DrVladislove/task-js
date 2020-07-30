@@ -1,4 +1,4 @@
-const operations = require("./operations-loops-3");
+const operations = require("./operations-loops-3.js");
 const assert = require("assert");
 
 describe("checkAssignGrade", function () {
