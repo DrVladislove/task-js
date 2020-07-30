@@ -14,7 +14,6 @@ describe("Number generator even/odd", function () {
   beforeEach(function () {
     // runs before all tests in this block
     spy = sinon.spy(console, "log");
-    operations.numberGenerator();
   });
 
   afterEach(function () {
@@ -32,10 +31,12 @@ describe("Number generator even/odd", function () {
     });
 
     it("Returns result — odd", function () {
+      operations.numberGenerator();
       expect(spy.calledWith("3 odd")).to.be.true;
     });
 
     it("Show result 5 times", function () {
+      operations.numberGenerator();
       expect(spy.callCount).to.be.eq(5);
     });
   });
@@ -50,10 +51,12 @@ describe("Number generator even/odd", function () {
     });
 
     it("Returns result — even", function () {
+      operations.numberGenerator();
       expect(spy.calledWith("12 even")).to.be.true;
     });
 
     it("Show result 5 times", function () {
+      operations.numberGenerator();
       expect(spy.callCount).to.be.eq(5);
     });
   });
