@@ -19,7 +19,7 @@ function assignGrade(mark) {
 }
 
 function checkAssignGrade() {
-  for (i = 85; i <= 100; i++) {
+  for (i = 80; i <= 100; i++) {
     console.log(assignGrade(81));
     return i;
   }
