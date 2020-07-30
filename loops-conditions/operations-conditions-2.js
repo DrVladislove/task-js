@@ -10,7 +10,7 @@ function helloWorld(lang) {
     case "es":
       return "Hola";
     default:
-      return "Привет";
+      return "Hello (on Russian)";
   }
 }
 module.exports = {

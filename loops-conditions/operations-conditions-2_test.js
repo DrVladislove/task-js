@@ -6,13 +6,13 @@ const assert = require("assert");
 const operations = require("./operations-conditions-2.js");
 
 describe("helloWorld", function () {
-  it("Правильно определяет язык 'en' —> Hello", () => {
+  it("Function defines language correctly 'en' —> Hello", () => {
     assert.equal(operations.helloWorld("en"), "Hello");
   });
-  it("Правильно определяет язык 'es' —> Hola", () => {
+  it("Function defines language correctly 'es' —> Hola", () => {
     assert.equal(operations.helloWorld("es"), "Hola");
   });
-  it("Правильно определяет язык 'default (ru)' —> Привет", () => {
-    assert.equal(operations.helloWorld(), "Привет");
+  it("Function defines language correctly 'default (ru)' —> Hello (on Russian)", () => {
+    assert.equal(operations.helloWorld(), "Hello (on Russian)");
   });
 });

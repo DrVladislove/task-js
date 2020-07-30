@@ -8,7 +8,7 @@ const operations = require("./operations-loops-1.js");
 var sinon = require("sinon");
 var expect = require("chai").expect;
 
-describe("Генератор Чётных/Нечетных", function () {
+describe("Number generator even/odd", function () {
   var spy;
 
   beforeEach(function () {
@@ -22,7 +22,7 @@ describe("Генератор Чётных/Нечетных", function () {
     console.log.restore();
   });
 
-  describe("Когда число нечетное", function () {
+  describe("When number is odd", function () {
     before(function () {
       sinon.stub(Math, "random").returns(0.1);
     });
@@ -31,16 +31,16 @@ describe("Генератор Чётных/Нечетных", function () {
       Math.random.restore();
     });
 
-    it("возвращает результат - нечетное", function () {
-      expect(spy.calledWith("3 нечетное")).to.be.true;
+    it("Returns result — odd", function () {
+      expect(spy.calledWith("3 odd")).to.be.true;
     });
 
-    it("Выводит результат 5 раз", function () {
+    it("Show result 5 times", function () {
       expect(spy.callCount).to.be.eq(5);
     });
   });
 
-  describe("Когда число четное", function () {
+  describe("When number is even", function () {
     before(function () {
       sinon.stub(Math, "random").returns(0.55);
     });
@@ -49,11 +49,11 @@ describe("Генератор Чётных/Нечетных", function () {
       Math.random.restore();
     });
 
-    it("возвращает результат - четное", function () {
-      expect(spy.calledWith("12 четное")).to.be.true;
+    it("Returns result — even", function () {
+      expect(spy.calledWith("12 is even")).to.be.true;
     });
 
-    it("Выводит результат 5 раз", function () {
+    it("Show result 5 times", function () {
       expect(spy.callCount).to.be.eq(5);
     });
   });
