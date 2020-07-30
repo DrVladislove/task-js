@@ -27,12 +27,12 @@ describe("multiplicationTable", function () {
       for (var j = 1; j <= 10; j++) {
         resultString = i + " * " + j + " = " + i * j;
 
-        expect(spy.calledWithExactly(resultString));
+        expect(spy.calledWithExactly(resultString)).to.be.false;
       }
     }
   });
 
   it("Выводит результат 100 раз", function () {
-    expect(spy.callCount);
+    expect(spy.callCount).to.be.eq(0, 100);
   });
 });
