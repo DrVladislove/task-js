@@ -12,7 +12,6 @@ function checkAssignGrade() {
     return a;
   }
 }
-checkAssignGrade();
 
 module.exports = {
   checkAssignGrade,
