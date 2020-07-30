@@ -4,23 +4,15 @@
 */
 
 function checkDividing(a, b) {
-  if (a % b) {
-    console.log(
-      "Число" +
-        " " +
-        a +
-        " " +
-        "делится на число " +
-        b +
-        " " +
-        "с остатком " +
-        (a % b) +
-        "; " +
-        "Частное: " +
-        a / b
-    );
-  } else if (a / b) {
-    console.log("Число " + a + " делится на число " + b + "; Ответ: " + a / b);
+  var res1 = a / b;
+  var res2 = a % b;
+  if (a % b == 0) {
+    return res1;
+  } else {
+    return res2;
   }
 }
-checkDividing(15, 2);
+
+module.exports = {
+  checkDividing,
+};
