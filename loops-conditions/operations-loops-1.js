@@ -11,9 +11,9 @@ function numberGenerator() {
   for (var i = 0; i < 5; i++) {
     var a = randomizer(1, 20);
     if (a % 2 == 0) {
-      console.log(a + " четное");
+      console.log(a + " even");
     } else {
-      console.log(a + " нечетное");
+      console.log(a + " odd");
     }
   }
 }
