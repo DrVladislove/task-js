@@ -5,7 +5,10 @@
 function definition(a) {
   var testChar = String.fromCharCode(a);
   if ((a = String)) {
-    console.log(testChar);
+    return testChar;
   }
 }
-definition(66);
+
+module.exports = {
+  definition,
+};
