@@ -1,12 +1,5 @@
-/*function definiton() {
-  charCodeAt(a);
-  if (charCodeAt(a) / 1) {
-    console.log("Число" + charCodeAt(a));
-  }
-}
-
-definiton();
-charCodeAt(66);
+/*Вводится целое число, обозначающее код символа по таблице ASCII. 
+Определить, это код английской буквы или какой-либо иной символ.
 */
 
 function definition(a) {
