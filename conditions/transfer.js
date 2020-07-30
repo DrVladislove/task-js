@@ -2,18 +2,17 @@
 Перевести число, введенное пользователем, в байты или килобайты в зависимости от его выбора.
 */
 
-function transfer(b) {
-  var a = 1;
+function transfer(a, b) {
   switch (a) {
-    case 1:
+    case "1":
       if (b * 1024) {
-        console.log(b * 1024 + "байт");
+        console.log(b * 1024 + " байт");
       }
-    case 2:
+    case "2":
       if (b / 1024) {
         console.log(b / 1024 + " килобайт");
       }
   }
 }
 
-transfer(512);
+transfer("2", 512);
