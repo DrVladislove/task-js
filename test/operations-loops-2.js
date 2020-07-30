@@ -11,7 +11,7 @@ function multiplicationTable() {
     }
   }
 }
-multiplicationTable();
+
 module.exports = {
   multiplicationTable,
 };
