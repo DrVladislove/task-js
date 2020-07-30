@@ -19,12 +19,13 @@ function assignGrade(mark) {
 }
 
 function checkAssignGrade() {
+  var a = assignGrade(81);
   for (i = 80; i <= 100; i++) {
-    console.log(assignGrade(81));
-    return i;
+    return a;
   }
 }
 checkAssignGrade();
+
 module.exports = {
   checkAssignGrade,
 };
