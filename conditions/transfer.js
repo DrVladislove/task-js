@@ -3,16 +3,16 @@
 */
 
 function transfer(a, b) {
+  var kilobyte = b / 1024,
+    byte = b * 1024;
   switch (a) {
     case "1":
-      if (b * 1024) {
-        console.log(b * 1024 + " байт");
-      }
+      return byte + " байт";
     case "2":
-      if (b / 1024) {
-        console.log(b / 1024 + " килобайт");
-      }
+      return kilobyte + " килобайт";
   }
 }
 
-transfer("2", 512);
+module.exports = {
+  transfer,
+};
