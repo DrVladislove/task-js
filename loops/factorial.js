@@ -1,3 +1,5 @@
+// Вычислить факториал введенного числа.
+
 function factorial(a) {
   var x = 0;
   if (a > 0) {
@@ -6,6 +8,10 @@ function factorial(a) {
   for (let i = 2; i <= a; i++) {
     x *= i;
   }
-  console.log(x);
+  return x;
 }
 factorial(4);
+
+module.exports = {
+  factorial,
+};
