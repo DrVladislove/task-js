@@ -11,13 +11,19 @@ function valueOfFunction(x) {
   var option1 = 2 * x - 10,
     option2 = 0,
     option3 = 2 * Math.abs(x) - 1,
-    result;
+    y;
   if (x > 0) {
-    console.log((result = option1));
+    y = option1;
+    return y;
   } else if (x == 0) {
-    console.log((result = option2));
+    y = option2;
+    return y;
   } else if (x < 0) {
-    console.log((result = option3));
+    y = option3;
+    return y;
   }
 }
-valueOfFunction(-2);
+
+module.exports = {
+  valueOfFunction,
+};
