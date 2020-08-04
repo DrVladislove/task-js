@@ -1,3 +1,8 @@
+/*
+В введенном промежутке натуральных чисел найти те, количество делителей у которых не меньше введенного значения. 
+Для найденных чисел вывести на экран количество делителей и все делители.
+*/
+
 function quantityOfDividers(a, b, n) {
   var m;
 
@@ -23,4 +28,8 @@ function quantityOfDividers(a, b, n) {
     a += 1;
   }
 }
-quantityOfDividers(343, 434, 20);
+quantityOfDividers(21, 44, 5);
+
+module.exports = {
+  quantityOfDividers,
+};
