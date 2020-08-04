@@ -10,7 +10,7 @@ describe("loopSteps", () => {
   });
 
   after(function () {
-    console.log.restore;
+    console.log.restore();
   });
 
   it("Print steps", function () {
