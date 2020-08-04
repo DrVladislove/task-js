@@ -1,10 +1,18 @@
+/*
+Напишите программу, доказывающую или проверяющую, что для множества натуральных чисел выполняется равенство:
+1+2+...+n = n(n+1)/2, где n - любое натуральное число.
+*/
+
 function naturalNumbers(n) {
-  var a, sum, mul;
+  var sum, mul;
   sum = 0;
-  for (let i = 1; i <= n; i++) {
+  for (var i = 1; i <= n; i++) {
     sum += i;
     mul = (n * (n + 1)) / 2;
   }
   console.log(n, "\n", sum, "\n", mul);
 }
-naturalNumbers(141);
+
+module.exports = {
+  naturalNumbers,
+};
