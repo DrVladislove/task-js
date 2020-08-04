@@ -1,6 +1,6 @@
 const operations = require("./number-of-identified.js");
 var sinon = require("sinon");
-var expect = require("chai");
+var expect = require("chai").expect;
 
 describe("numIdentified", function () {
   var spy;
@@ -20,7 +20,7 @@ describe("numIdentified", function () {
     expect(spy.calledWithExactly("Количество чисел: ", 1)).to.be.true;
     expect(spy.calledWithExactly("Цифра: ", 5)).to.be.true;
     expect(spy.calledWithExactly(301)).to.be.true;
-    for (var i = 0; i < n; i++) {
+    for (var i = 0; i < 1; i++) {
       var count = 0;
       while (a > 0) {
         if (a % 10 == d) {
