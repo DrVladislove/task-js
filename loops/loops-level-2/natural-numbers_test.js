@@ -21,7 +21,7 @@ describe("naturalNumbers", function () {
       sum += i;
       mul = (56 * (56 + 1)) / 2;
     }
-    expect(spy.calledWithExactly(56, "\n", sum, "\n", mul));
+    expect(spy.calledWithExactly(56, "\n", sum, "\n", mul)).to.be.true;
   });
 
   it("equality proven", function () {
@@ -32,6 +32,6 @@ describe("naturalNumbers", function () {
       sum += i;
       mul = (71 * (71 + 1)) / 2;
     }
-    expect(spy.calledWithExactly(71, "\n", sum, "\n", mul));
+    expect(spy.calledWithExactly(71, "\n", sum, "\n", mul)).to.be.true;
   });
 });
