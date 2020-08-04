@@ -1,3 +1,5 @@
+// Вывести какой-либо символ по диагоналям воображаемого квадрата.
+
 function diagonalSymbols() {
   var i, j;
   for (i = 0; i < 20; i++) {
@@ -12,4 +14,7 @@ function diagonalSymbols() {
     console.log(line);
   }
 }
-diagonalSymbols();
+
+module.exports = {
+  diagonalSymbols,
+};
