@@ -1,3 +1,5 @@
+//Вывести на экран, из каких простых множителей состоит введенное натуральное число.
+
 function naturalNumber(n) {
   var i, f;
   console.log(n);
@@ -19,4 +21,7 @@ function naturalNumber(n) {
     }
   }
 }
-naturalNumber(507);
+
+module.exports = {
+  naturalNumber,
+};
