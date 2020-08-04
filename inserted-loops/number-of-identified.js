@@ -1,3 +1,8 @@
+/*
+Посчитать, сколько раз встречается определенная цифра в введенной последовательности чисел. 
+Количество вводимых чисел и цифра, которую необходимо посчитать, задаются вводом с клавиатуры.
+*/
+
 function numIdentified(n, d, a) {
   var count = 0,
     a;
@@ -16,4 +21,8 @@ function numIdentified(n, d, a) {
 
   console.log("Количество цифр: ", count);
 }
-numIdentified(1, 0, 10500);
+numIdentified(1, 5, 301);
+
+module.exports = {
+  numIdentified,
+};
