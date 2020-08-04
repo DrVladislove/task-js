@@ -1,3 +1,8 @@
+/*
+Среди натуральных чисел, которые были введены, найти наибольшее по сумме цифр. 
+Вывести на экран это число и сумму его цифр.
+*/
+
 function maxSum(n) {
   var max_s, max_m, s, m;
   max_m = 0;
@@ -14,8 +19,11 @@ function maxSum(n) {
       max_s = s;
       max_m = m;
     }
-    console.log(n);
   }
-  console.log("Число имеет максимальную сумму цифр: ", max_m, max_s);
+  console.log("Число имеет максимальную сумму цифр: ", max_s);
 }
 maxSum(3781);
+
+module.exports = {
+  maxSum,
+};
