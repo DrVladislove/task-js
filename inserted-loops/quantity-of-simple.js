@@ -1,3 +1,5 @@
+// Вводятся десять натуральных чисел больше 2. Посчитать, сколько среди них простых чисел.
+
 function quantityOfSimpleNum() {
   var nums = [];
   while (nums.length < 10) {
@@ -22,4 +24,7 @@ function quantityOfSimpleNum() {
     break;
   }
 }
-quantityOfSimpleNum();
+
+module.exports = {
+  quantityOfSimpleNum,
+};
