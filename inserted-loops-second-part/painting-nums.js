@@ -1,3 +1,13 @@
+/*
+"Рисование" символами. Выведите на экран числа в следующем виде:
+  1
+  2  2
+  3  3  3
+  4  4  4  4
+  5  5  5  5  5
+и т.д.
+*/
+
 function paintingNums(n) {
   var i, j;
 
@@ -9,4 +19,6 @@ function paintingNums(n) {
     console.log(line);
   }
 }
-paintingNums(9);
+module.exports = {
+  paintingNums,
+};
