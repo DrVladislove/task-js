@@ -1,0 +1,27 @@
+//Вывести на экран, из каких простых множителей состоит введенное натуральное число.
+
+function naturalNumber(n) {
+  var i, f;
+  console.log(n);
+  while (n > 1) {
+    i = 2;
+    f = 0;
+    while (1) {
+      if (n % i == 0) {
+        n = n / i;
+        console.log(i, " ");
+        f = 1;
+        break;
+      } else {
+        i += 1;
+      }
+    }
+    if (f == 1) {
+      continue;
+    }
+  }
+}
+
+module.exports = {
+  naturalNumber,
+};
