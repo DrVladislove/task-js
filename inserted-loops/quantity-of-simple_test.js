@@ -13,8 +13,8 @@ describe("quantityOfSimpleNum", function () {
     console.log.restore();
   });
 
-  it("Shows simple nums correctly", function () {
-    operations.quantityOfSimpleNum;
+  it("Shows quantity of simple numbers correctly", function () {
+    operations.generationNums();
 
     var nums = [];
     while (nums.length < 10) {
@@ -24,8 +24,10 @@ describe("quantityOfSimpleNum", function () {
       }
     }
     expect(spy.calledWithExactly(nums));
-    var count = 10;
 
+    operations.quantityOfSimpleNum();
+
+    var count = 10;
     for (var i = 0; i < nums.length; i++) {
       nums.forEach(function (item) {
         for (var j = 2; j <= Math.sqrt(item) + 1; j++) {
@@ -36,6 +38,7 @@ describe("quantityOfSimpleNum", function () {
         }
       });
       expect(spy.calledWithExactly("Простых чисел: ", count));
+      console.log("Простых чисел: ", count);
       break;
     }
   });

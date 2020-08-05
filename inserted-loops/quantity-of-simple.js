@@ -1,7 +1,8 @@
 // Вводятся десять натуральных чисел больше 2. Посчитать, сколько среди них простых чисел.
+var nums = [];
+var count = 10;
 
-function quantityOfSimpleNum() {
-  var nums = [];
+function generationNums() {
   while (nums.length < 10) {
     var randomizer = Math.ceil(Math.random() * 100);
     if (nums.indexOf(randomizer) === -1) {
@@ -9,8 +10,9 @@ function quantityOfSimpleNum() {
     }
   }
   console.log(nums);
-  var count = 10;
+}
 
+function quantityOfSimpleNum() {
   for (var i = 0; i < nums.length; i++) {
     nums.forEach(function (item) {
       for (var j = 2; j <= Math.sqrt(item) + 1; j++) {
@@ -24,7 +26,7 @@ function quantityOfSimpleNum() {
     break;
   }
 }
-
 module.exports = {
+  generationNums,
   quantityOfSimpleNum,
 };
